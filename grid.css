@@ -1,0 +1,84 @@
+body {
+    background-color: rgb(8, 8, 8);
+  }
+  
+  #container{
+      display: grid;
+      gap: 15px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 100px 200px 200px 100px;
+  }
+  
+  .item{
+      background-color: aquamarine;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 15px;
+      font-weight:bolder;
+      color: rgb(241, 248, 240);
+      border: 10px solid white;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .header{
+      grid-column-start: 1;
+      grid-column-end: 4;
+      background-color:rgb(23, 239, 15) ;
+      font-size: 55px;
+      font-family: Jameel Noori Nastaleeq;
+      color: rgb(46, 45, 51);
+      
+  }
+  
+  .sidebar{
+      grid-row-start: 2;
+      grid-row-end: 4;
+      background-color: purple;
+      font-size: 35px;
+      font-family: AAAGoldenLotus Stg1_Ver1;
+      align-items: right;
+      display: flex;
+      text-align: right;
+    direction: rtl; /* Right to Left */
+    unicode-bidi: embed; /* Ensures the text direction is consistent */
+  }
+  
+  .content-1{
+      grid-column-start: 2;
+      grid-column-end: 4;
+      background-color: blue;
+      font-size: 28px;
+      font-family: Jameel Noori Nastaleeq;
+      text-align: right;
+    direction: rtl; /* Right to Left */
+    unicode-bidi: embed; /* Ensures the text direction is consistent */
+  }
+  
+  .content-2{
+      background-color: rgb(128, 14, 14);
+      font-size: 19px;
+      font-family: Jameel Noori Nastaleeq;
+      color: rgb(241, 238, 238);
+      text-align: right;
+    direction: rtl; /* Right to Left */
+    unicode-bidi: embed; /* Ensures the text direction is consistent */
+  }
+  .content-3{
+      background-color: rgb(15, 114, 114);
+      text-align: right;
+    direction: rtl; /* Right to Left */
+    unicode-bidi: embed; /* Ensures the text direction is consistent */
+    font-family: Jameel Noori Nastaleeq;
+    font-size: 25px;
+  }
+  
+  .footer{
+      grid-column-start: 1;
+      grid-column-end: 4;
+      background-color: chocolate;
+      font-family: Jameel Noori Nastaleeq;
+      font-size: 35px;
+      color: rgb(46, 45, 51);
+  }
+
